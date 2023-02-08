@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 """
-class FileStorage that serializes instances to a JSON file and deserializes JSON file to instances
+class FileStorage that serializes instances to a JSON file \
+        and deserializes JSON file to instances
 """
 import json
+
 
 class FileStorage():
     """
@@ -37,5 +39,4 @@ class FileStorage():
             with open(self.__file_path, "r") as f:
                 self.__objects = json.load(f)
         except FileNotFoundError:
-            pass
-        
+            pass        
